@@ -5,7 +5,7 @@
 	<title>Horizon Events | Preneur Group</title>
 	<meta charset="UTF-8">
 	<meta name="format-detection" content="telephone=no">
-	<link rel="stylesheet" href="css/style.min.css?_v=20250105210844">
+	<link rel="stylesheet" href="css/style.min.css?_v=20250106123843">
 	<meta property="og:title" content="Horizon Events | Preneur Group">
 	<meta property="og:description" content="Horizon Events | Preneur Group">
 	<!-- <meta property="og:image" content="https://example.com/path-to-image.webp"> -->
@@ -38,6 +38,9 @@
 		</div>
 		<main class="page">
 			<section class="page__hero hero">
+				<!-- <div class="hero__bg">
+						<img src="img/hero/hero_image.webp" alt="Image">
+					</div> -->
 				<div class="hero__container">
 					<h1 class="hero__title">The first written reference occurs in the eighth century, in one of the earliest Japanese texts.</h1>
 					<div class="hero__text">
@@ -258,7 +261,7 @@
 					/* Головний блок */
 					.fls-preloader{
 						pointer-events: none;
-						z-index: -1;
+						z-index: 1;
 						position: fixed;
 						width: 100%;
 						height: 100%;
@@ -277,7 +280,7 @@
 					}
 					/* Блок з лічильником */
 					.fls-preloader__counter{
-						font-size: 10rem;
+						font-size: 7rem;
 					}
 					/* Прогресбар */
 					.fls-preloader__line{}
@@ -366,7 +369,7 @@
 			preloader();
 		</script>
 	</div>
-	<script src="js/app.min.js?_v=20250105210844"></script>
+	<script src="js/app.min.js?_v=20250106123843"></script>
 </body>
 
 </html>

@@ -1,4 +1,4 @@
-@import url(https://fonts.googleapis.com/css?family=Montserrat:regular,600,700&display=swap);
+@import url(https://fonts.googleapis.com/css?family=Montserrat:regular,500,600,700&display=swap);
 @import url(https://fonts.googleapis.com/css?family=Kaushan+Script:regular&display=swap);
 * {
   padding: 0;
@@ -241,7 +241,7 @@ body::after {
   display: block;
   color: #ffca61;
   font-family: "Kaushan Script";
-  line-height: 1;
+  line-height: 1.3;
   letter-spacing: -.0375rem;
   text-transform: capitalize
 }
@@ -420,28 +420,31 @@ body::after {
   filter: blur(9.375rem)
 }
 .page__hero {
-  background: url(../img/hero/hero_image.webp) top center/cover no-repeat
+  background: url(../img/hero/hero_image.webp) top center/100% no-repeat
 }
 .page__contact-us {
   background: url(../img/contact_us/contact_us_bg.webp) center bottom/cover no-repeat
 }
+.hero {
+  min-height: 80vh
+}
 .hero__container {
   position: relative;
   z-index: 5;
-  max-width: 49.375rem;
+  max-width: 50.9375rem;
   margin-inline: auto
 }
 .hero__title {
   color: #fff;
   text-align: center;
   font-family: "Kaushan Script";
-  line-height: 1;
+  font-weight: 700;
+  line-height: 1.5;
   letter-spacing: -.0375rem
 }
 .hero__text p {
-  -webkit-font-kerning: none;
-  font-kerning: none;
-  line-height: 1.4
+  line-height: 1.4;
+  font-weight: 500
 }
 .hero__text a {
   color: #9e034f;
@@ -768,7 +771,7 @@ body::after {
     width: 3.375rem
   }
   .header {
-    top: 3.75rem
+    top: 2.5rem
   }
   .footer {
     -webkit-padding-before: 6.25rem;
@@ -782,11 +785,11 @@ body::after {
     font-size: 1.25rem
   }
   .hero {
-    -webkit-padding-before: 14.375rem;
-    padding-block-start: 14.375rem
+    -webkit-padding-before: 9.375rem;
+    padding-block-start: 9.375rem
   }
   .hero__title {
-    font-size: 3.75rem
+    font-size: 3.125rem
   }
   .hero__title:not(:last-child) {
     -webkit-margin-after: 3.4375rem;
@@ -796,8 +799,8 @@ body::after {
     font-size: 1.25rem
   }
   .hero__text p:not(:last-child) {
-    -webkit-margin-after: 2.1875rem;
-    margin-block-end: 2.1875rem
+    -webkit-margin-after: 1.5625rem;
+    margin-block-end: 1.5625rem
   }
   .live-forever__content {
     padding-block: 4.375rem
@@ -891,7 +894,7 @@ body::after {
     width: 9.375rem
   }
   .title {
-    font-size: 1.375rem
+    font-size: 1.25rem
   }
   .title span {
     font-size: 1.625rem
@@ -945,18 +948,18 @@ body::after {
     font-size: 1rem
   }
   .hero {
-    -webkit-padding-before: 9.375rem;
-    padding-block-start: 9.375rem
+    -webkit-padding-before: 7.5rem;
+    padding-block-start: 7.5rem
   }
   .hero__title {
-    font-size: 2rem
+    font-size: 1.75rem
   }
   .hero__title:not(:last-child) {
-    -webkit-margin-after: .9375rem;
-    margin-block-end: .9375rem
+    -webkit-margin-after: 2.1875rem;
+    margin-block-end: 2.1875rem
   }
   .hero__text p {
-    font-size: 1rem
+    font-size: 1.125rem
   }
   .hero__text p:not(:last-child) {
     -webkit-margin-after: .9375rem;
@@ -1004,7 +1007,7 @@ body::after {
     margin-block-end: .9375rem
   }
   .snow-camping__content {
-    padding-block: 4.0625rem
+    padding-block: 1.25rem
   }
   .snow-camping__content {
     padding-inline: 1.25rem
@@ -1031,6 +1034,11 @@ body::after {
   }
   .contact-us__text p {
     font-size: 1.125rem
+  }
+}
+@media (max-width:68.74875em) {
+  .page__hero {
+    background-size: cover
   }
 }
 @media (max-width:61.99875em) {
@@ -1089,7 +1097,7 @@ body::after {
     width: clamp(9.375rem ,7.1191860465rem + 11.2790697674vw ,15.4375rem)
   }
   .title {
-    font-size: clamp(1.375rem ,1.1889534884rem + .9302325581vw ,1.875rem)
+    font-size: clamp(1.25rem ,1.0174418605rem + 1.1627906977vw ,1.875rem)
   }
   .title span {
     font-size: clamp(1.625rem ,.8343023256rem + 3.9534883721vw ,3.75rem)
@@ -1129,7 +1137,7 @@ body::after {
     width: clamp(2.5rem ,2.1744186047rem + 1.6279069767vw ,3.375rem)
   }
   .header {
-    top: clamp(1.25rem ,.3197674419rem + 4.6511627907vw ,3.75rem)
+    top: clamp(1.25rem ,.7848837209rem + 2.3255813953vw ,2.5rem)
   }
   .footer {
     -webkit-padding-before: clamp(2.5rem ,1.1046511628rem + 6.976744186vw ,6.25rem);
@@ -1143,22 +1151,22 @@ body::after {
     font-size: clamp(1rem ,.9069767442rem + .4651162791vw ,1.25rem)
   }
   .hero {
-    -webkit-padding-before: clamp(9.375rem ,7.5145348837rem + 9.3023255814vw ,14.375rem);
-    padding-block-start: clamp(9.375rem ,7.5145348837rem + 9.3023255814vw ,14.375rem)
+    -webkit-padding-before: clamp(7.5rem ,6.8023255814rem + 3.488372093vw ,9.375rem);
+    padding-block-start: clamp(7.5rem ,6.8023255814rem + 3.488372093vw ,9.375rem)
   }
   .hero__title {
-    font-size: clamp(2rem ,1.3488372093rem + 3.2558139535vw ,3.75rem)
+    font-size: clamp(1.75rem ,1.238372093rem + 2.5581395349vw ,3.125rem)
   }
   .hero__title:not(:last-child) {
-    -webkit-margin-after: clamp(.9375rem ,.0072674419rem + 4.6511627907vw ,3.4375rem);
-    margin-block-end: clamp(.9375rem ,.0072674419rem + 4.6511627907vw ,3.4375rem)
+    -webkit-margin-after: clamp(2.1875rem ,1.7223837209rem + 2.3255813953vw ,3.4375rem);
+    margin-block-end: clamp(2.1875rem ,1.7223837209rem + 2.3255813953vw ,3.4375rem)
   }
   .hero__text p {
-    font-size: clamp(1rem ,.9069767442rem + .4651162791vw ,1.25rem)
+    font-size: clamp(1.125rem ,1.0784883721rem + .2325581395vw ,1.25rem)
   }
   .hero__text p:not(:last-child) {
-    -webkit-margin-after: clamp(.9375rem ,.4723837209rem + 2.3255813953vw ,2.1875rem);
-    margin-block-end: clamp(.9375rem ,.4723837209rem + 2.3255813953vw ,2.1875rem)
+    -webkit-margin-after: clamp(.9375rem ,.7049418605rem + 1.1627906977vw ,1.5625rem);
+    margin-block-end: clamp(.9375rem ,.7049418605rem + 1.1627906977vw ,1.5625rem)
   }
   .live-forever__content {
     padding-block: clamp(1.25rem ,.0872093023rem + 5.8139534884vw ,4.375rem)
@@ -1202,7 +1210,7 @@ body::after {
     margin-block-end: clamp(.9375rem ,.4026162791rem + 2.6744186047vw ,2.375rem)
   }
   .snow-camping__content {
-    padding-block: clamp(3.4375rem ,4.2950581395rem + -1.1627906977vw ,4.0625rem)
+    padding-block: clamp(1.25rem ,.4360465116rem + 4.0697674419vw ,3.4375rem)
   }
   .snow-camping__content {
     padding-inline: clamp(1.25rem ,.7848837209rem + 2.3255813953vw ,2.5rem)
